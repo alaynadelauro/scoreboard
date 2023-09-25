@@ -1,0 +1,18 @@
+.reset-button{
+    background-color:red;
+    color:white;
+}
+
+.scorebox{
+    background-color:rgba(0, 0, 255, 0.64);
+    color:white;
+}
+.scorebutton{
+    background-color:rgba(82, 82, 217, 0.64);
+    color:white;
+    border-radius:10%;
+    min-height: 100px;
+}
+.bgimage{
+    background-color: green;
+}

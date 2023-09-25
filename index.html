@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-light bgimage">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-end">
+                <button onclick="resetPoints()"class="btn reset-button"> Reset</button>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-8 scorebox d-flex justify-content-around">
+                <div>
+                    <div>
+                        <p class="fs-1">Home</p>
+                    </div>
+                    <div>
+                        <p class="fs-1 scorebutton text-center" id="homeScore" onclick="homeWins()">0</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="fs-1">Away</p>
+                    </div>
+                    <div>
+                        <p class="fs-1 scorebutton text-center" id="awayScore" onclick="awayWins()">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row d-flex">
+            <div class="col-12 col-md-6 d-flex flex-direction-column justify-content-center">
+                <div><button onclick="addOneHome()" class="scorebutton">Home+1</button></div>
+                <div><button onclick="addThreeHome()"class="scorebutton">Home+3</button></div>
+                <!-- <button onclick="selectButtonHome('+1')" class="scorebutton Home">Home+1</button>
+                <button onclick="selectButtonHome('+3')"class="scorebutton Home">Home+3</button> -->
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <button onclick="addOneAway()"class="scorebutton">Away+1</button>
+                    <button onclick="addThreeAway()"class="scorebutton">Away+3</button>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
